@@ -18,7 +18,7 @@ function reverseInt(n) {
     let isNegative = Math.sign(n) === -1 ? true : false;
 
     // convert the absolute value of n to string
-    str = Math.abs(n).toString();
+    let str = Math.abs(n).toString();
 
     // reverse string
     str = str.split('').reverse().join('');

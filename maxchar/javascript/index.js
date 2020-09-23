@@ -14,7 +14,7 @@ function maxChar(str) {
     let charMap = {};
 
     // for ... of will grab each iterable element
-    for (character of array) {
+    for (let character of array) {
         if (!charMap[character]) { // the character key is not in the map
             charMap[character] = 1;
         } else {
@@ -26,7 +26,7 @@ function maxChar(str) {
     let maxChar = '';
 
     // for ... in will grab keys when used against an object
-    for (char in charMap) {
+    for (let char in charMap) {
         if (charMap[char] > max) {
             max = charMap[char];
             maxChar = char;
