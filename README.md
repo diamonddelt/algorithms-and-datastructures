@@ -14,8 +14,11 @@
 - [reversestring](reversestring/javascript/index.js)
 - [steps](steps/javascript/index.js)
 - [vowels](vowels/index.js)
+- [Queue Data Structure](queue/javascript/index.js)
+- [weavequeue](weave/javascript/index.js)
 
 ## Notes
 
 - [Runtime Overview](./runtimes-overview.md)
 - [Memoization](./memoization.md)
+- [Data Structures](./data-structures.md)
