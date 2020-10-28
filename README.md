@@ -16,6 +16,8 @@
 - [vowels](vowels/index.js)
 - [Queue Data Structure](queue/javascript/index.js)
 - [weavequeue](weave/javascript/index.js)
+- [Stack Data Structure](stack/javascript/index.js)
+- [queuefromstacks](qfroms/javascript/index.js)
 
 ## Notes
 
