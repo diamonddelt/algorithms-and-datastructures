@@ -26,5 +26,8 @@ In other words, using these logical structures helps build better, more performa
     - Sibling nodes
     - Common operation = "traversal"
         - Breadth-First Traversal - iterate through each node on each level of the tree, starting from top to bottom, from left to right
+            - References
+                - https://brilliant.org/wiki/breadth-first-search-bfs/
+                - https://hackernoon.com/breadth-first-search-in-javascript-e655cd824fa4
         - Depth-First Traversal - starting from the top of the tree, choose the left-most sibling node, and keep going to left-most bottom node until you reach bottom. Then, go up to most immediate parent, and count each sibling node underneath it from left to right. Once these are all accounted for, go back to top parent node, and select next immediate node right of the previous child node scanned, and repeat the pattern. 
             - AKA, the goal is to still move from left to right underneath the parent node, but you try to get to the bottom of the tree first before counting the siblings at a given level
