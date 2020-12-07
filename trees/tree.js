@@ -8,13 +8,28 @@ class Tree {
     // traverse methods
 
     // Breadth-First Search
+    // the "gotcha" = this requires "APPENDING" elements to the queue,
+    // which simulates the same-level search behavior
     traverseBF(fn) {
-        let arr = [this.root]; // create FIFO queue
+        let arr = [this.root]; // queue
         while (arr.length) {
             let node = arr.shift(); // take first node out
-            arr.push(...node.children); // push the children of the removed node into the master array
+            arr.push(...node.children); // append all children node to the queue
 
             fn(node); // evaluation function AKA "Is this the node you were searching for?"
+        }
+    }
+
+    // Depth-First Search
+    // the "gotcha" = this requires "PREPENDING" elements to the queue,
+    // which simulates the depth-first search behavior
+    traverseDF(fn) {
+        let arr = [this.root]; // queue
+        while (arr.length) {
+            let node = arr.shift(); // take the first node out
+            arr.unshift(...node.children); // prepend all children node to the queue
+
+            fn(node);
         }
     }
 
